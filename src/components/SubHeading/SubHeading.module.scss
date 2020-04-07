@@ -1,0 +1,9 @@
+@import "./../../sass/variables";
+
+.wrap{
+    margin: 5rem 0 2rem 0;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-shadow: .2rem .2rem $lighter-gray;
+}

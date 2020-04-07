@@ -1,0 +1,45 @@
+@import "./../../sass/variables";
+@import "./../../sass/animations";
+
+.wrap{
+    margin: 2rem .5rem 1rem 0;
+    display: grid;
+    animation: upToDown .5s;
+    grid-gap: .5rem;
+    grid-template-columns: 50% 50%;
+    &>div{
+        // margin: 1rem 0;
+        padding-left: .5rem;
+        border-radius: .5rem;
+    }
+    &_first{
+        background-color: $red-back;
+        color: $red;
+    }
+    &_second{
+        background-color: $green-back;
+        color: $green;
+    }
+    &_third{
+        background-color: $yellow-back;
+        color: $yellow;
+    }
+    &_fourth{
+        background-color: $blue-back;
+        color: $blue;
+    }
+    &_head{
+        margin: 1rem 0;
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+    &_delta{
+        margin: 1rem 0;
+        font-size: 1.25rem;
+    }
+    &_num{
+        margin: 1rem 0;
+        font-size: 3rem;
+        font-weight: 800;
+    }
+}

@@ -1,0 +1,17 @@
+@import "./../../sass/animations";
+@import "./../../sass/variables";
+
+.wrap{
+    animation: upToDown .5s;
+    &_heading{
+        font-size: 4.5rem;
+        font-weight: 900;
+        margin: 2rem auto;
+        text-shadow: 2px 2px $lighter-gray;
+    }
+    &_sub{
+        text-transform: uppercase;
+        color: $gray;
+        margin-bottom: 2rem;
+    }
+}
