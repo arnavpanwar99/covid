@@ -1,8 +1,44 @@
+@import "./../../sass/variables";
+
 .wrap{
-    // background-color: black;
-    // height: 50vh;
-    margin: 0 -1rem;
+    margin: 3rem -1rem 0 -1rem;
+    color: wheat;
     display: flex;
+    box-shadow: 2rem 2rem 1rem $gray;
     flex-direction: column;
-    
+    &_content{
+        background-color: $dark;
+        display: flex;
+        padding: 4rem 0 3rem 0;
+        flex-direction: column;
+        &_quote{
+            margin: 0 2rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        &_button{
+            margin: 3rem auto 1rem auto;
+            display: flex;
+            color: white;
+            text-decoration: none;
+            background-color: #008dd2;
+            align-items: center;
+            padding: 1rem 1rem;
+            border-radius: .25rem;
+            flex-direction: row;
+            &_text{
+                text-transform: uppercase;
+                font-weight: 500;
+                margin-left: 1rem;
+                font-size: 1.25rem;
+            }
+        }
+    }
+    &_void{
+        height: 10vh;
+        display: flex;
+        background-color: black;
+    }
 }

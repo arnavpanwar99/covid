@@ -25,7 +25,7 @@ const Routes = (props) => {
                 <Route path="/patients">
                     <Patients />
                 </Route>
-                <Route path="/helplines">
+                <Route path="/help">
                     <Helplines />
                 </Route>
                 <Route path="*">

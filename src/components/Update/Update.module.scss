@@ -9,10 +9,10 @@
     font-weight: 800;
     font-size: 1.25rem;
     &_key{
-        color: $blue-back;
+        color: rgba($color: $purple, $alpha: .5);
     }
     &_value{
         font-size: 1.5rem;
-        color: $blue;
+        color: $purple;
     }
 }

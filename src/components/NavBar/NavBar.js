@@ -34,8 +34,8 @@ class NavBar extends React.Component{
                         </Link>
                     </div>
                     <div onClick={() => this.setTab(3)} className={s.wrap_child}>
-                        <Link className={s.none} to='/helplines'>
-                            Helplines
+                        <Link className={s.none} to='/help'>
+                            Help
                         </Link>
                     </div>
                 </div>

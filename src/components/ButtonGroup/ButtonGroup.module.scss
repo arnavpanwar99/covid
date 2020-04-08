@@ -1,0 +1,31 @@
+@import "./../../sass/variables";
+
+.wrap{
+    display: flex;
+    margin: 3rem auto;
+    flex-direction: row;
+    &_button{
+        flex: 1;
+        background-color: $lighter-gray;
+        display: flex;
+        font-size: 2rem;
+        padding: 1.5rem 0;
+        border-radius: .5rem;
+        flex-direction: row;
+        font-weight: 600;
+        justify-content: center;
+        &_icon{
+            display: flex;
+            flex: .5;
+            justify-content: flex-end;
+        }
+        &_text{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &_void{
+        flex: .1;
+    }
+}

@@ -1,6 +1,6 @@
-export const data_json = async () => {
+export const data_json = async (url) => {
     try {
-        const response = await fetch('https://api.covid19india.org/data.json');
+        const response = await fetch(url);
         if(response.status === 200){
             const data = await response.json();
             return data;

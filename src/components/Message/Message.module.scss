@@ -2,7 +2,7 @@
 
 .card{
     background-color: $orange-back;
-    height: 30vh;
+    height: 35vh;
     display: flex;
     border-radius: .5rem;
     margin: auto;
@@ -10,8 +10,9 @@
         flex: 1;
         overflow: scroll;
         margin: auto 2rem;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         line-height: 2.3rem;
+        font-weight: 600;
         letter-spacing: -.05rem;
         font-weight: bolder;
         text-align: center;

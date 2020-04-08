@@ -19,6 +19,7 @@
     position: fixed;
     transition: all linear .5s;
     bottom: 0;
+    z-index: 1;
     left: 0;
     transform: translateX(4.25%);
     opacity: 0;

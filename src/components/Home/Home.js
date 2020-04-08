@@ -45,7 +45,8 @@ class Home extends React.Component{
     }
 
     async componentDidMount(){
-        const response = await data_json();
+        const url = 'https://api.covid19india.org/data.json';
+        const response = await data_json(url);
         this.setState({ data: response });
         this.prepareData(response);
         this.prepareMonthlyData(response);
