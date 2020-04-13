@@ -12,11 +12,21 @@
         padding: 4rem 0 3rem 0;
         flex-direction: column;
         &_quote{
+            display: inline;
+            background-color: rgba($color: white, $alpha: .2);
             margin: 0 2rem;
+            padding: .2rem;
+            border-radius: .25rem;
             font-size: 1.5rem;
             font-weight: 800;
             text-align: center;
             text-transform: uppercase;
+        }
+        &_words{
+            margin: 3.5rem auto .25rem auto;
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-align: center;
         }
         &_button{
             margin: 3rem auto 1rem auto;
@@ -34,6 +44,20 @@
                 margin-left: 1rem;
                 font-size: 1.25rem;
             }
+        }
+        &_credit{
+            margin: 0rem auto 0rem auto;
+            display: flex;
+            color: #007bff;
+            font-size: 1.5rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 900;
+            background-color: rgba(0,123,255,.0627451);
+            align-items: center;
+            padding: 1rem 1rem;
+            border-radius: .25rem;
+            flex-direction: row;
         }
     }
     &_void{

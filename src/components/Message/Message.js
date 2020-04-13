@@ -22,7 +22,7 @@ export default class Message extends Component{
     }
 
     componentDidMount(){
-        // this.toggleMessage();
+        this.togglgeMessage();
     }
 
     render(){

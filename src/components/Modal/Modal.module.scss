@@ -1,0 +1,58 @@
+@import "./../../sass/variables";
+@import "./../../sass/animations";
+
+.wrap{
+    position: fixed;
+    top: 6%;
+    background-color: $light;
+    display: flex;
+    flex-direction: column;
+    left: 5%;
+    padding: 1rem 1rem;
+    right: 5%;
+    bottom: 24%;
+    height: 70vh;
+    z-index: 2;
+    border-radius: .5rem;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    -webkit-box-shadow: 0 0 65px 2px rgba($color: #000, $alpha: .95);
+    -moz-box-shadow: 0 0 65px 2px rgba($color: #000, $alpha: .95);
+    box-shadow: 0 0 65px 2px rgba($color: #000, $alpha: .95);
+    &_button{
+        flex: 1 0 15vh;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        &>div{
+            display: flex;
+            cursor: pointer;
+            justify-content: center;
+            height: 2rem;
+            border-radius: .25rem;
+            font-size: 1.2rem;
+        }
+        &_save{
+            flex: 1.5;
+            background-color: $mint;
+            padding: 1rem 0;
+        }
+        &_cancel{
+            flex: 1.5;
+            padding: 1rem 0;
+            background-color: $light-gray;
+        }
+        &_void{
+            flex: 1;
+        }
+    }
+}
+
+.showGradually{
+    display: flex;
+    animation: showGradually .5s forwards ease;
+}
+
+.hideGradually{
+    animation: hideGradually .5s forwards ease;
+}

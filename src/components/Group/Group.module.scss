@@ -1,0 +1,26 @@
+.country{
+    display: flex;
+    flex: 1 0 17.5vh;
+    flex-direction: column;
+    &_head{
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    &_options{
+        display: flex;
+        flex-direction: row;
+        margin-top: .75rem;
+        &_option{
+            display: flex;
+            flex-direction: row;
+            flex: .5;
+            &_text{
+                font-size: 1.25rem;
+                margin: auto .25rem;
+            }
+        }
+        &_void{
+            flex: .5;
+        }
+    }
+}

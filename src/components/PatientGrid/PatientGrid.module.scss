@@ -1,0 +1,36 @@
+@import "./../../sass/variables";
+
+.title{
+    text-align: center;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: $red;
+}
+.subTitle{
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 1rem 1rem 0 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: rgba($color: $red, $alpha:.6);
+}
+.wrap{
+    display: grid;
+    width: 100%;
+    grid-gap: .1rem;
+    margin-top: 5rem;
+    grid-template-columns: repeat(4, 25%);
+    // height: 3rem;
+    &_item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba($color: $red1, $alpha: .5);
+        font-weight: 800;
+        color: $red4;
+        font-size: 2rem;
+        border-radius: .25rem;
+        padding: 1.75rem 1rem;
+    }
+}

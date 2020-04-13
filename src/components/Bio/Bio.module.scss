@@ -1,0 +1,105 @@
+@import "./../../sass/variables";
+
+.wrap{
+    display: grid;
+    position: fixed;
+    top: 10%;
+    bottom: 20%;
+    background-color: white;
+    height: 70vh;
+    right: 5%;
+    left: 5%;
+    width: 90vw;
+    z-index: 2;
+    overflow: scroll;
+    border-radius: .5rem;
+    color: $yellow-back;
+    -webkit-overflow-scrolling: touch;
+    -webkit-box-shadow: 0 0 9.5rem 1rem black;
+    -moz-box-shadow: 0 0 9.5rem 1rem black;
+    box-shadow: 0 0 9.5rem 1rem black;
+    font-weight: 500;
+    grid-auto-rows: 15% 19% 17% auto auto auto auto;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-areas: 
+    "patient patient patient patient"
+    "date date date date"
+    "nation nation gender gender"
+    "state state city city"
+    "status status update update"
+    "notes notes notes notes"
+    "source source source source";
+    &>div{
+        padding: 1rem;
+        display: flex;
+        background-color: rgba($color: $orange-back, $alpha: .5);
+    }
+    &_patient{
+        grid-area: patient;
+        justify-content: space-between;
+        flex-direction: row;
+        &_number{
+            font-size: 2rem;
+        }
+        &_close{
+            background-color: $red3;
+            font-size: 2rem;
+            display: flex;
+            height: 45%;
+            align-items: center;
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: .25rem;
+        }
+    }
+    &_date{
+        grid-area: date;
+        flex-direction: column;
+        &_key{
+            font-size: 2rem;
+        }
+        &_value{
+            font-size: 1.5rem;
+            font-weight: 700;
+            word-break: break-all;
+            text-transform: uppercase;
+            display: inline;
+            padding: .2rem;
+            line-height: 2.4rem;
+            border-radius: .5rem;
+            background-color: rgba($color: $yellow-back, $alpha: .2);
+        }
+    }
+    &_nation{
+        grid-area: nation;
+        flex-direction: column;
+    }
+    &_gender{
+        grid-area: gender;
+        flex-direction: column;
+    }
+    &_state{
+        grid-area: state;
+        flex-direction: column;
+    }
+    &_city{
+        grid-area: city;
+        flex-direction: column;
+    }
+    &_status{
+        grid-area: status;
+        flex-direction: column;
+    }
+    &_update{
+        grid-area: update;
+        flex-direction: column;
+    }
+    &_notes{
+        grid-area: notes;
+        flex-direction: column;
+    }
+    &_source{
+        grid-area: source;
+        flex-direction: column;
+    }
+}

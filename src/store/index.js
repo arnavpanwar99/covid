@@ -1,6 +1,10 @@
-import { createStore } from 'redux';
-import { urlReducer } from './../reducers';
+import { createStore, combineReducers } from 'redux';
+import { basicDataReducer, filterReducer, rawDataReducer } from './../reducers';
 
-const store = createStore(urlReducer);
+const store = createStore(combineReducers({
+    filterReducer,
+    rawDataReducer,
+    basicDataReducer
+}));
 
 export default store;

@@ -7,6 +7,8 @@ import Update from '../Update/Update';
 import Country from '../Country/Country';
 import Timeline from '../Timeline/Timeline';
 import Footer from '../Footer/Footer';
+import { connect } from 'react-redux';
+import { saveBasicData } from './../../actions/index';
 
 let preparedData = [{
     month: 'January',
@@ -50,6 +52,7 @@ class Home extends React.Component{
         this.setState({ data: response });
         this.prepareData(response);
         this.prepareMonthlyData(response);
+        this.props.dispatch(saveBasicData(response));
     }
 
     render(){
@@ -138,4 +141,4 @@ class Home extends React.Component{
 
 }
 
-export default Home;
+export default connect()(Home);

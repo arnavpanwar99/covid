@@ -1,0 +1,15 @@
+@import "./../../../sass/variables";
+
+.wrap{
+    text-align: center;
+    color: $lighter-gray;
+    &_head{
+        font-size: 13rem;
+        font-weight: 900;
+    }
+    &_text{
+        margin: 4rem 4rem;
+        font-size: 1.75rem;
+        font-weight: 600;
+    }
+}

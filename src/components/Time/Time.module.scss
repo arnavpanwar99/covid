@@ -1,0 +1,18 @@
+@import "./../../sass/variables";
+
+.wrap{
+    display: flex;
+    flex: 1 0 17.5vh;
+    flex-direction: column;
+	&_head{
+		font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+    &_tile{
+        color: $red;
+        font-weight: 800;
+        font-size: 1.35rem;
+        font-family: 'Raleway', serif;
+    }
+}

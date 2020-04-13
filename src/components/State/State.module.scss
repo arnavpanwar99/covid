@@ -1,0 +1,14 @@
+@import "../../sass/variables";
+
+.subTitle{
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: rgba($color: $red, $alpha:.6);
+}
+
+.test{
+    margin: 2rem auto;
+}

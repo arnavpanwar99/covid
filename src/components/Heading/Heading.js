@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './Heading.module.scss';
+import { Link } from 'react-router-dom';
 import Message from './../Message/Message';
 
 class Heading extends React.Component{
@@ -32,10 +33,10 @@ class Heading extends React.Component{
                             </div>
                             <div className={s.expander_container}>
                                 <div className={s.expander_container_actual}>
-                                    <div onClick={() => this.goToSection(0)} className={s.expander_container_actual_text}>Home</div>
-                                    <div onClick={() => this.goToSection(650)} className={s.expander_container_actual_text}>States</div>
-                                    <div onClick={() => this.goToSection(2400)} className={s.expander_container_actual_text}>Patients</div>
-                                    <div onClick={() => this.goToSection(3500)} className={s.expander_container_actual_text}>Help</div>
+                                    <div className={s.expander_container_actual_text}><Link to='/' className={s.none}>Home</Link></div>
+                                    <div className={s.expander_container_actual_text}><Link to='/state' className={s.none}>States</Link></div>
+                                    <div className={s.expander_container_actual_text}><Link to='patients' className={s.none}>Patients</Link></div>
+                                    <div className={s.expander_container_actual_text}><Link to='help' className={s.none}>Help</Link></div>
                                 </div>
                             </div>
                         </div>
@@ -59,6 +60,12 @@ class Heading extends React.Component{
         if(open){
             this.one.style.transform='rotate(45deg)';
             this.one.style.margin='-.75rem auto';
+            this.master.style.position='fixed';
+            this.master.style.left='42%';
+            this.master.style.top='2.5%';
+            this.master.style.backgroundColor='white';
+            this.master.style.borderRadius='50%';
+            this.master.style.padding='3rem 1rem';
             this.three.style.transform='rotate(-45deg)';
             this.three.style.margin='-.75rem auto';
             this.two.classList.remove(bringBack);
@@ -68,6 +75,9 @@ class Heading extends React.Component{
         }else{
             this.one.style.transform='rotate(0deg)';
             this.one.style.margin='.25rem auto';
+            this.master.style.position='static';
+            this.master.style.borderRadius='.25rem';
+            this.master.style.padding='1rem';
             this.three.style.transform='rotate(0deg)';
             this.three.style.margin='.25rem auto';
             this.two.classList.remove(sendRight);

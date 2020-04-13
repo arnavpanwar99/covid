@@ -8,7 +8,7 @@
         display: flex;
         flex-direction: row;
         &_head{
-            flex: 7;
+            flex: 9;
             max-width: 70%;
             &_heading{
                 font-size: 4.5rem;
@@ -24,13 +24,19 @@
         }
         &_list{
             max-width: 30%;
-            flex: 3;
+            flex: 0;
+            -webkit-box-shadow: 0 0 25px 2px rgba($color: #000, $alpha: .5);
+            -moz-box-shadow: 0 0 25px 2px rgba($color: #000, $alpha: .5);
+            box-shadow: 0 0 25px 2px rgba($color: #000, $alpha: .5);
+            height: fit-content;
             display: flex;
             cursor: pointer;
             flex-direction: column;
             justify-content: center;
             transition: all .5s ease;
-            margin-bottom: 2rem;
+            margin: auto;
+            padding: 1rem;
+            border-radius: .25rem;
             &_item{
                 transition: all .5s ease;
                 width: 4rem;
@@ -52,47 +58,51 @@
 }
 
 .expander{
-    height: 70vh;
+    // height: 50vh;
     width: 80%;
+    height: fit-content;
     z-index: 1;
     justify-content: center;
     position: fixed;
     flex-direction: column;
     display: none;
     left: 10%;
-    margin: auto;
-    top: 5%;
-    &_button{
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        cursor: pointer;
-        border-radius: 50%;
-        padding: .25rem;
-        height: 5.5rem;
-        width: 5.5rem;
-        background-color: white;
-        &>div{
-            transition: all .5s ease;
-            width: 3rem;
-            position: relative;
-            border-radius: .175rem;
-            height: .4rem;
-            background-color: black;
-        }
-        &_item{
-            margin: 2.5rem auto;
-            transform: rotate(-45deg);
-        }
-        &_item2{
-            margin: -2.95rem auto;
-            transform: rotate(45deg);
-        }
-    }
+    margin: 0 auto;
+    top: 20%;
+    -webkit-box-shadow: 0 0 65px 2px rgba($color: #000, $alpha: .95);
+    -moz-box-shadow: 0 0 65px 2px rgba($color: #000, $alpha: .95);
+    box-shadow: 0 0 65px 2px rgba($color: #000, $alpha: .95);
+    // &_button{
+    //     justify-content: center;
+    //     align-items: center;
+    //     margin: auto;
+    //     cursor: pointer;
+    //     border-radius: 50%;
+    //     padding: .25rem;
+    //     height: 5.5rem;
+    //     width: 5.5rem;
+    //     background-color: white;
+    //     &>div{
+    //         transition: all .5s ease;
+    //         width: 3rem;
+    //         position: relative;
+    //         border-radius: .175rem;
+    //         height: .4rem;
+    //         background-color: black;
+    //     }
+    //     &_item{
+    //         margin: 2.5rem auto;
+    //         transform: rotate(-45deg);
+    //     }
+    //     &_item2{
+    //         margin: -2.95rem auto;
+    //         transform: rotate(45deg);
+    //     }
+    // }
     &_container{
         background-color: white;
         border-radius: .75rem;
-        margin: 3rem 0;
+        margin: 0;
         padding: 3rem 0;
         display: flex;
         flex-direction: column;
@@ -124,4 +134,9 @@
 .showExpander{
     display: flex;
     animation: showGradually .5s forwards ease;
+}
+
+.none{
+    text-decoration: none;
+    color: black;
 }
